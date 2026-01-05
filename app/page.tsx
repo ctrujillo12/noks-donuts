@@ -191,6 +191,95 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
 
         {/* Menu Section */}
         <section id="menu" style={{ padding: '5rem 1rem', maxWidth: '1000px', margin: '0 auto' }}>
+          {/* Specials Section */}
+          <div style={{
+            backgroundColor: '#FFE5D9',
+            padding: '2rem',
+            borderRadius: '12px',
+            marginBottom: '3rem',
+            border: '3px solid #fc5a8d',
+            boxShadow: '0 4px 12px rgba(252, 90, 141, 0.2)'
+          }}>
+            <h3 style={{ 
+              fontSize: '1.75rem', 
+              fontWeight: 'bold', 
+              marginBottom: '1rem',
+              color: '#fc5a8d',
+              textAlign: 'center'
+            }}>
+               Current Specials
+            </h3>
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+              gap: '1.5rem',
+              marginTop: '1.5rem'
+            }}>
+              <div style={{
+                backgroundColor: 'white',
+                padding: '1.5rem',
+                borderRadius: '8px',
+                textAlign: 'center',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>
+                <img 
+                  src="/images-noks/applecider.png" 
+                  alt="Apple Cider Donut"
+                  style={{ 
+                    width: '120px', 
+                    height: '120px', 
+                    objectFit: 'cover', 
+                    borderRadius: '50%',
+                    margin: '0 auto 1rem',
+                    boxShadow: '0 2px 6px rgba(0,0,0,0.15)'
+                  }}
+                />
+                <p style={{ 
+                  fontSize: '1.25rem', 
+                  fontWeight: 'bold', 
+                  color: '#d9a066',
+                  marginBottom: '0.5rem'
+                }}>
+                  Apple Cider
+                </p>
+                <p style={{ fontSize: '0.875rem', color: '#666' }}>
+                  Cake Donut
+                </p>
+              </div>
+              <div style={{
+                backgroundColor: 'white',
+                padding: '1.5rem',
+                borderRadius: '8px',
+                textAlign: 'center',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>
+                <img 
+                  src="/images-noks/bananamochi.png" 
+                  alt="Banana Mochi Donut"
+                  style={{ 
+                    width: '120px', 
+                    height: '120px', 
+                    objectFit: 'cover', 
+                    borderRadius: '50%',
+                    margin: '0 auto 1rem',
+                    boxShadow: '0 2px 6px rgba(0,0,0,0.15)'
+                  }}
+                />
+                <p style={{ 
+                  fontSize: '1.25rem', 
+                  fontWeight: 'bold', 
+                  color: '#FFD700',
+                  marginBottom: '0.5rem'
+                }}>
+                  Banana
+                </p>
+                <p style={{ fontSize: '0.875rem', color: '#666' }}>
+                  Mochi Donut
+                </p>
+              </div>
+            </div>
+          </div>
+
           <h2 style={{ fontSize: '2rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '1rem' }}>Our standard menu</h2>
           <p style={{ textAlign: 'center', color: '#666', marginBottom: '3rem' }}>
           Check out our standard menu below, and drop in or check our{" "}
