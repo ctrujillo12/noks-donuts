@@ -18,6 +18,20 @@ export default function Home() {
    "https://images.squarespace-cdn.com/content/v1/668b38999928de19ab29f590/b25169c6-c741-4a7b-b8f4-86c50be4ac3d/DSC00157.jpg"
   ]
 
+  const flavorColors = {
+    "vanilla bean": "#5f5f5fff",
+    "chocolate": "#7b3f00",
+    "maple": "#d9a066",
+    "glazed": "#676767ff",
+    "strawberry": "#fc5a8d",
+    "blueberry": "#4f86f7",
+    "raspberry": "#e30b5c",
+    "purple sweet potato": "#9b59b6",
+    "blue lemon": "#00bfff",
+    "matcha": "#6aa84f",
+    "mango passionfruit": "#ffb347"
+  }
+
   return (
     <div style={{ backgroundColor: '#FFF8F0' }}>
       {/* Header */}
@@ -58,11 +72,11 @@ export default function Home() {
                 display: 'inline-block',
                 backgroundColor: '#338729',
                 color: 'white',
-                padding: '0.4rem 1rem', // smaller padding to align with links
-                fontSize: '1rem',       // match link size
+                padding: '0.4rem 1rem', 
+                fontSize: '1rem',       
                 fontWeight: '600',
                 textDecoration: 'none',
-                lineHeight: '1.5',      // aligns vertically with other links
+                lineHeight: '1.5',      
                 transition: 'background-color 0.3s'
               }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = '#2c6a23'}
@@ -71,7 +85,6 @@ export default function Home() {
               Order
             </a>
           </nav>
-
 
           {/* Mobile Menu Button */}
           <button 
@@ -219,17 +232,14 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
             <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>Flavors</h3>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• vanilla bean</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• chocolate</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• maple</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• glazed</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• strawberry</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• blueberry</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• raspberry</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• purple sweet potato</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• blue lemon</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• matcha</p>
-              <p style={{ fontSize: '1rem', color: '#333' }}>• mango passionfruit</p>
+              {Object.keys(flavorColors).map(flavor => (
+                <p 
+                  key={flavor} 
+                  style={{ fontSize: '1rem', color: flavorColors[flavor], fontWeight: '600' }}
+                >
+                  • {flavor}
+                </p>
+              ))}
             </div>
           </div>
 
@@ -300,7 +310,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                   boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
                 }}
               >
-                →
+                → 
               </button>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginTop: '1rem' }}>
                 {slides.map((_, idx) => (
