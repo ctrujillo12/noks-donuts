@@ -207,7 +207,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
               color: '#fc5a8d',
               textAlign: 'center'
             }}>
-              ✨ Current Specials ✨
+               Current Specials 
             </h3>
             <div style={{ 
               display: 'grid', 
@@ -223,7 +223,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
                 <img 
-                  src="/images-noks/img1.png" 
+                  src="/images-noks/applecider.png" 
                   alt="Apple Cider Donut"
                   style={{ 
                     width: '120px', 
@@ -240,7 +240,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                   color: '#d9a066',
                   marginBottom: '0.5rem'
                 }}>
-                  🍎 Apple Cider
+                   Apple Cider
                 </p>
                 <p style={{ fontSize: '0.875rem', color: '#666' }}>
                   Cake Donut
@@ -254,7 +254,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
                 <img 
-                  src="/images-noks/img4.png" 
+                  src="/images-noks/bananamochi.png" 
                   alt="Banana Mochi Donut"
                   style={{ 
                     width: '120px', 
@@ -271,7 +271,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                   color: '#FFD700',
                   marginBottom: '0.5rem'
                 }}>
-                  🍌 Banana
+                   Banana
                 </p>
                 <p style={{ fontSize: '0.875rem', color: '#666' }}>
                   Mochi Donut
