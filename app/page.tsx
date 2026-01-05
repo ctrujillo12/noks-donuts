@@ -18,7 +18,7 @@ export default function Home() {
    "https://images.squarespace-cdn.com/content/v1/668b38999928de19ab29f590/b25169c6-c741-4a7b-b8f4-86c50be4ac3d/DSC00157.jpg"
   ]
 
-  const flavorColors = {
+  const flavorColors: { [key: string]: string } = {
     "vanilla bean": "#5f5f5fff",
     "chocolate": "#7b3f00",
     "maple": "#d9a066",
@@ -207,7 +207,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
               color: '#fc5a8d',
               textAlign: 'center'
             }}>
-               Current Specials
+              ✨ Current Specials ✨
             </h3>
             <div style={{ 
               display: 'grid', 
@@ -223,7 +223,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
                 <img 
-                  src="/images-noks/applecider.png" 
+                  src="/images-noks/img1.png" 
                   alt="Apple Cider Donut"
                   style={{ 
                     width: '120px', 
@@ -240,7 +240,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                   color: '#d9a066',
                   marginBottom: '0.5rem'
                 }}>
-                  Apple Cider
+                  🍎 Apple Cider
                 </p>
                 <p style={{ fontSize: '0.875rem', color: '#666' }}>
                   Cake Donut
@@ -254,7 +254,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
                 <img 
-                  src="/images-noks/bananamochi.png" 
+                  src="/images-noks/img4.png" 
                   alt="Banana Mochi Donut"
                   style={{ 
                     width: '120px', 
@@ -271,7 +271,7 @@ No artificial/imitation flavors. No artificial colors. No preservatives. No high
                   color: '#FFD700',
                   marginBottom: '0.5rem'
                 }}>
-                  Banana
+                  🍌 Banana
                 </p>
                 <p style={{ fontSize: '0.875rem', color: '#666' }}>
                   Mochi Donut
