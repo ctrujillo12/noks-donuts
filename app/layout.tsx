@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Odell's Bagel | Savor Fresh Bagels Now - Order Today",
+  title: "Nok's Donuts | Savor Premium Donuts - Order Today",
   description: 'Hand rolled, naturally fermented bagels in Denver, Colorado',
 }
 

@@ -47,11 +47,31 @@ export default function Home() {
           </a>
 
           {/* Desktop Navigation */}
-          <nav style={{ display: 'flex', gap: '2rem' }} className="desktop-nav">
+          <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }} className="desktop-nav">
             <a href="#about" style={{ textDecoration: 'none', color: '#333' }}>About</a>
             <a href="#contact" style={{ textDecoration: 'none', color: '#333' }}>Contact</a>
-            <a href="#contact" style={{ textDecoration: 'none', color: '#333' }}>News</a>
+            <a href="#news" style={{ textDecoration: 'none', color: '#333' }}>News</a>
+
+            <a 
+              href="#menu"
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#338729',
+                color: 'white',
+                padding: '0.4rem 1rem', // smaller padding to align with links
+                fontSize: '1rem',       // match link size
+                fontWeight: '600',
+                textDecoration: 'none',
+                lineHeight: '1.5',      // aligns vertically with other links
+                transition: 'background-color 0.3s'
+              }}
+              onMouseEnter={e => e.currentTarget.style.backgroundColor = '#2c6a23'}
+              onMouseLeave={e => e.currentTarget.style.backgroundColor = '#338729'}
+            >
+              Order
+            </a>
           </nav>
+
 
           {/* Mobile Menu Button */}
           <button 
@@ -104,7 +124,7 @@ export default function Home() {
           }}>
             <div style={{ textAlign: 'center', color: 'white', padding: '1rem' }}>
               <h1 style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: 'bold', marginBottom: '1rem' }}>
-                premium donuts, finest ingredients
+                premium, all-natural donuts
               </h1>
               <h4 style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', marginBottom: '1rem', letterSpacing: '0.1em' }}>
                 HANDCRAFTED FRESH DAILY
